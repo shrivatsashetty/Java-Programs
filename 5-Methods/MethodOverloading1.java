@@ -16,7 +16,7 @@ class MethodOverloading1{
         System.out.println("Division yeilds " + num1 / num2);
         return num1 / num2 ;
     } 
-
+    // main method
     public static void main(String[] args){
         calculate(2);
         calculate(2,4);
