@@ -1,3 +1,4 @@
+/* Java Program to demonstrate method overloading */
 class MethodOverloading1{
     // orignal method
     public static int calculate(int number){
