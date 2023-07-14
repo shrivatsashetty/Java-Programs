@@ -10,8 +10,8 @@ class MethodOverloading1{
         System.out.println("Product is " + a * b);
         return a * b;
     } 
-    // overloaded
-     public static int calculate(double num1, double num2){
+    // overloaded with arguments of diffrent data type
+     public static double calculate(double num1, double num2){
         System.out.print("Method called with three argument, ");
         System.out.println("Division yeilds " + num1 / num2);
         return num1 / num2 ;
@@ -20,6 +20,8 @@ class MethodOverloading1{
     public static void main(String[] args){
         calculate(2);
         calculate(2,4);
+        calculate(8.34, 2.45);
+
 
     }
 
