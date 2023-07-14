@@ -1,6 +1,6 @@
 class SummationMethod{
     // below we create a static method which is callable without an object
-    public static int calculateSum(int a, int b){ 
+    static int calculateSum(int a, int b){ 
         return a + b;
     }
     // in main method we call the static method
