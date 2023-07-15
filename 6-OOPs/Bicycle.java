@@ -5,19 +5,19 @@ class Bicycle{
     float currentSpeed = 23.45f;
 
     void changeGear(){
-        this.currentGear++;
+        currentGear++;
     }
     void slowDown(){
-        this.currentSpeed -= 3.5f;
+        currentSpeed -= 3.5f;
     }
 
     void stop(){
-        this.currentSpeed = 0;
+        currentSpeed = 0;
     } 
 
     void printStates(){
-        System.out.println("Current Gear: " + this.currentGear );
-        System.out.println("Current Speed: " + this.currentSpeed );
+        System.out.println("Current Gear: " + currentGear );
+        System.out.println("Current Speed: " + currentSpeed );
 
     }
 
