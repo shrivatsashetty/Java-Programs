@@ -1,6 +1,6 @@
 class SumByRecursion{
 
-    protected static int summation(int n){
+    static int summation(int n){
         if(n <= 0){return 0;}
         else{return n + summation(n-1); }
         
