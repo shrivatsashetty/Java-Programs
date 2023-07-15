@@ -8,7 +8,7 @@ class Bicycle{
         this.currentGear++;
     }
     void slowDown(){
-        this.currentSpeed -= 3.5;
+        this.currentSpeed -= 3.5f;
     }
 
     void stop(){
@@ -27,7 +27,6 @@ class BicycleDemo{
     public static void main(String[] args){
         Bicycle hercules = new Bicycle();
         System.out.println("Top gear: " + hercules.topGear);
-        // System.out.println("Current Gear: " + hercules.topGear);
         hercules.printStates();
         hercules.changeGear();
         hercules.slowDown();
