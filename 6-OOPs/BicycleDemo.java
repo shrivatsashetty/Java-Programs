@@ -4,11 +4,13 @@ class Bicycle{
     int currentGear = 0;
     float currentSpeed = 23.45f;
 
-    void changeGear(){
-        currentGear++;
+    void changeGear(int newGear){
+        System.out.println("gear shifting to: " + newGear);
+        currentGear = newGear;
     }
-    void slowDown(){
-        currentSpeed -= 3.5f;
+    void slowDown(float cutSpeedBy){
+        System.out.println("Slowing down by: " + cutSpeedBy);
+        currentSpeed -= cutSpeedBy;
     }
 
     void stop(){
@@ -28,8 +30,8 @@ class BicycleDemo{
         Bicycle hercules = new Bicycle();
         System.out.println("Top gear: " + hercules.topGear);
         hercules.printStates();
-        hercules.changeGear();
-        hercules.slowDown();
+        hercules.changeGear(2);
+        hercules.slowDown(2.13f);
         hercules.printStates();
 
 
