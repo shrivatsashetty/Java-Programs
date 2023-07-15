@@ -1,0 +1,16 @@
+class VariableScope{
+
+    private static int x = 20; // global variable within the class
+    
+    public static void main(String[] args) {
+        int y = 40;
+        System.out.println("Calling y from main method, y = " + y);
+        System.out.println("Calling x from main method, x = " + x);
+        myMethod();
+    }
+    
+    private static void myMethod(){
+        System.out.println("callin x from myMethod, x =  " + x);
+    }
+
+}
