@@ -7,6 +7,7 @@ abstract class People{
 class Student extends People{
         String lastName = "Smith";
 
+        // overriding the speak method
         void speak(){
             System.out.println("My name is " + this.firstName + " My age is " + this.age);
         }
