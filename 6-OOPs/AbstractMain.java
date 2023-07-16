@@ -1,7 +1,7 @@
 abstract class People{
     String firstName = "Jhon";
     int age = 20;
-    abstract void speak();
+    abstract void speak(); // abstract method cannot have a body
 } 
 
 class Student extends People{
