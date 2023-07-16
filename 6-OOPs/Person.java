@@ -3,12 +3,12 @@ class Person{
     private int age;
     
     // below is the constructor method
-    public Person(String name, int age){
+    protected Person(String name, int age){
         this.age = age;
         this.name = name;
     }
 
-    public void sayName(){
+    private void sayName(){
         System.out.println("Hi my name is " + this.name + " and I'm " + this.age + " years old");
     }
 
