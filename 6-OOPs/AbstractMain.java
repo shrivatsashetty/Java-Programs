@@ -12,7 +12,7 @@ class Student extends People{
         }
     }
 
-class AbstractMethod{
+class AbstractMain{
 
     public static void main(String[] args){
         Student student1 = new Student();
