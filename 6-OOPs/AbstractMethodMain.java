@@ -4,15 +4,15 @@ abstract class People{
     abstract void speak();
 } 
 
-class AbstractMethod{
-
-    static class Student extends People{
+class Student extends People{
         String lastName = "Smith";
 
         void speak(){
-            System.out.println("My name is " + this.firstName + "My age is" + this.age);
+            System.out.println("My name is " + this.firstName + " My age is " + this.age);
         }
     }
+
+class AbstractMethod{
 
     public static void main(String[] args){
         Student student1 = new Student();
