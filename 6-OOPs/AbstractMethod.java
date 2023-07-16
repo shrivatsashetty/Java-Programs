@@ -10,7 +10,7 @@ class AbstractMethod{
         String lastName = "Smith";
 
         void speak(){
-            System.out.println("Hello I'am a student and can speak");
+            System.out.println("My name is " + this.firstName + "My age is" + this.age);
         }
     }
 
