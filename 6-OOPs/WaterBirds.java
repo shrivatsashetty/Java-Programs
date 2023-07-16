@@ -1,3 +1,4 @@
+/*  program to demonstrate multiple inheritence in java */
 interface Flyable{
     public void fly();
 }
