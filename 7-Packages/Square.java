@@ -1,7 +1,7 @@
 class Square{
     public double side;
     public double diagonal;
-    private double area;
+    public double area;
 
     // constructor
     Square(double side){
@@ -9,8 +9,8 @@ class Square{
         this.diagonal = side * Math.sqrt(2);
     }
 
-    double calcuateArea(double side){
-        this.area = side * Math.sqrt(2);
+    double calcuateArea(){
+        this.area = Math.pow(this.side, 2);
         return this.area;
     }
 
