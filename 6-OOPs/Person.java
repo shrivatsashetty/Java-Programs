@@ -16,9 +16,11 @@ class Person{
 
 
     public static void main(String[] args){
-        Person person1 = new Person("Shashi", 30);
+        // creating objects of the class
+        Person person1 = new Person("Shashi", 30); 
         Person person2 = new Person("Manoj", 22); 
         
+        // calling the methods via the objects
         person1.sayName();
         person2.sayName();
 
