@@ -1,6 +1,6 @@
 class Car{
     void fullThrottle(){
-        System.out.println("The car is at fullspeed");
+        System.out.println("The car is at max speed");
     }
 
     void showSpeed(double speed){
