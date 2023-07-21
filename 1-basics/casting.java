@@ -7,7 +7,7 @@ class casting{
         System.out.print("int value : ");
         System.out.println(a); // int value : 256
         System.out.print("same int value converted to byte is "); 
-        System.out.println(b); // byte value : 0
+        System.out.println(b); // same int value converted to byte is -128
 
         /* Explicit conversion from float to int */
         float f = -5.67f;
