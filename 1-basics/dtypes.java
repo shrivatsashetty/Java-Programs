@@ -9,7 +9,7 @@ class dtypes{
         float f1 = 3.14f;           // explicitly specify float data type by appending 'f' at last
         char mychar1 = '#';         // a cahracter should be enclosed in single quotes only
         char mychar2 = '7';
-        char mychar3 = 65;          // prints the corresponding to 65 whic is 'A'
+        char mychar3 = 65;          // prints the corresponding ASCII value to 65 whic is 'A'
         char mychar4 = '\u0000';    // prints corresponding unicode character
         char mychar5 = '\uffff';    // the last unicode character
         String mystr1 = "Shri";     // String data type can store multiple characters
