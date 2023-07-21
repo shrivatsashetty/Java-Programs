@@ -27,6 +27,7 @@ class dtypes{
         System.out.println(mychar3);
         System.out.println(mychar4);
         System.out.println(mychar5);
+        System.out.println("length of mystr1 is " + mystr1.length());
         System.out.println(satya);
         System.out.println(mitya);
         
