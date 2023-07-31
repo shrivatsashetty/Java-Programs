@@ -20,7 +20,7 @@ public class userinput
 	    System.out.print("Enter a string: ");
 	    String mystring = intake.next();
 	    System.out.println("Your string is " + mystring);
-	    
+	    Scanner.close();
 	    
 	    
 // 		System.out.println("");
