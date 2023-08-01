@@ -16,7 +16,7 @@ class Student extends People{
             System.out.println("My name is " + this.firstName + " My age is " + this.age);
         }
     }
-
+// only the class containing main method can be public in a java file
 public class AbstractMain{
 
     public static void main(String[] args){
