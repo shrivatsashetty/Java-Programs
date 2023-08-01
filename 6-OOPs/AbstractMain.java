@@ -2,6 +2,10 @@ abstract class People{
     String firstName = "Jhon";
     int age = 20;
     abstract void speak(); // abstract method cannot have a body
+    // an abstract class can also have non-abstract methods
+    void nonAbstractMethod(){
+        System.out.println("not abst");
+    }
 } 
 
 class Student extends People{
@@ -13,7 +17,7 @@ class Student extends People{
         }
     }
 
-class AbstractMain{
+public class AbstractMain{
 
     public static void main(String[] args){
         Student student1 = new Student();
