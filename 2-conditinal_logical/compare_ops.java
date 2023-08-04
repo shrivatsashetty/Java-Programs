@@ -8,7 +8,7 @@ class compare_ops{
 
         float f1 = 2.22f;
         double d1 = 2.33d;
-        result1 =  f1 == d1; // float & double cant be equal
+        boolean result1 =  f1 == d1; // float & double cant be equal
         System.out.println("float 2.22 == double 2.22 : " + result1);
                   
     }
