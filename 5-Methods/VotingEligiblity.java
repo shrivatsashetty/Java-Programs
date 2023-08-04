@@ -14,6 +14,7 @@ class VotingEligiblity{
         Scanner input = new Scanner(System.in);
         int age = input.nextInt();
         CheckAge(age);
+        input.close();
 
     }
     
