@@ -2,12 +2,12 @@ class NumberAdd {
 
     static int a, b, c; // now other classes can also acess the variables, since they are static
 
-    static void getdata(int x, int y) {
+    void getdata(int x, int y) {
         a = x;
         b = y;
     }
 
-    static void add() {
+    void add() {
         c = a + b;
         System.out.println("sum = " + c);
     }
