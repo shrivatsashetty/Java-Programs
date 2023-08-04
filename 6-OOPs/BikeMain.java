@@ -2,7 +2,7 @@
  class Bike{
     protected String company = "Bajaj";
     public void throttle(){
-        System.out.println("Veee......Veeee..");
+        System.out.println("Veeeeeeeee......Veeeeeeee..");
     }
  }
 
@@ -21,7 +21,7 @@ class Pulsar extends Bike{
     }
 }
 
-class BikeMain{
+public class BikeMain{
     public static void main(String[] args){
         Pulsar pulsar200 = new Pulsar(200.0f);
         System.out.println("bike Comapany: " + pulsar200.company);

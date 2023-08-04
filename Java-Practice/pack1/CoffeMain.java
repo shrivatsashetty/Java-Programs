@@ -1,6 +1,6 @@
 package pack1;
 
-class Coffe{
+class Coffee{
     public String taste = "sweet";
     public String type = "capucino";
 
@@ -14,7 +14,7 @@ class Coffe{
 
 class CoffeMain{
     public static void main(String[] args){
-        Coffe c1 = new Coffe();
+        Coffee c1 = new Coffee();
         c1.drinkCoffe();
     } 
 }

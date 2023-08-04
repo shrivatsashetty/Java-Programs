@@ -1,3 +1,4 @@
+// a class contianing abstract methods is called abstract class
 abstract class People{
     String firstName = "Jhon";
     int age = 20;
