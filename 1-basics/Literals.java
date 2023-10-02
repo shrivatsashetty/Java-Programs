@@ -1,4 +1,4 @@
-class literals{
+class Literals{
     public static void main(String args[]){
 
         /* bin and hex numbers in java */

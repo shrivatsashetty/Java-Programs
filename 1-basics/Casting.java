@@ -1,4 +1,4 @@
-class casting{
+class Casting{
     public static void main(String args[]){
         byte b;
         int a = 384;

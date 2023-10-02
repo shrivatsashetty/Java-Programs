@@ -1,4 +1,4 @@
-class dtypes{
+class DataTypes{
 
     public static void main(String args[]){
         int myint = 2147483647;     // int can store -2147483648 to +2147483647
