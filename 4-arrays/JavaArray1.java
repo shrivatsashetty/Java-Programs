@@ -1,4 +1,4 @@
-class jarray1{
+class JavaArray1{
     public static void main(String[] args){
         int[] numbers = {7,8,5,4,3,2};
         System.out.println(numbers[0]);

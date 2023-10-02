@@ -1,6 +1,6 @@
 // java program to print the greates amoung the three numbers
 
-class greatest{
+class Greatest{
     public static void main(String args[]){
         int a = 3;
         int b = 7;

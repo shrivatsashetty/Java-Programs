@@ -1,7 +1,7 @@
 /* Note here I have used class name that is different from filename 
     so  while compiling look on to it */
 
-class logical{
+class Logical{
     public static void main(String args[]){
         int a = 51;
         int b = 26;

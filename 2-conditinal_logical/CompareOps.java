@@ -1,4 +1,4 @@
-class compare_ops{
+class CompareOps{
     public static void main(String args[]){
         float num1 = 2.33f;
         float num2 = 2.35f;

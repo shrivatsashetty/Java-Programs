@@ -1,4 +1,4 @@
-class shirt{
+class ShirtSize{
     public static void main(String args[]){
 
         String size = "m";

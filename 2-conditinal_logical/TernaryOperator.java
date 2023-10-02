@@ -1,4 +1,4 @@
-class ternary{
+class TernaryOperator{
     public static void main(String args[]){
         // greater using ternary
         int x = 10;
