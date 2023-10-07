@@ -16,6 +16,7 @@ class Pulsar extends Bike{
         System.out.println("peeeep........side plzz.");
     }
     // overriding throttle method 
+    @Override
     public void throttle(){
         System.out.println("Vroooooom........");
     }

@@ -20,8 +20,19 @@ public class GenericPrinterMain {
     public static void main(String[] args){
         System.out.println("\n");
         
-        Printer <Integer> printer = new Printer <> (20) ;
-        System.out.println(printer.toPrint);
+        // creating a Integer type object and passing to our generic class
+        Printer<Integer> intPrinter = new Printer<> (20) ;
+        System.out.println(intPrinter.toPrint);
+
+
+        // creating a Double type object
+        Printer<Double> doublePrinter = new Printer<> (3.144);
+        System.out.println(doublePrinter.toPrint);
+
+        // with string 
+        Printer<String> name = new Printer<>("Harsha");
+        System.out.println(name.toPrint);
+
     }
     
 }
