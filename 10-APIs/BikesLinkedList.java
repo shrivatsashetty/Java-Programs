@@ -7,7 +7,7 @@ public class BikesLinkedList {
     public static void main(String[] args){
         System.out.println("\nOutput:\n");
 
-        /* First we will create an immutable list conataining names of some bike companies  */
+        /* First we will create an immutable list conataining names of some bike companies  using List.of() method */
         List<String> bikeNames = List.of("Bajaj", "TVS", "Honda"); 
 
         /* Now pass the created list as input (argument) to the constructor of LinkedList class */
