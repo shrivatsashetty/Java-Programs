@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class RandomValueGenerationDemo {
+public class RandomGenerator {
     public static void main(String[] args){
         Random randomValue = new Random();
 

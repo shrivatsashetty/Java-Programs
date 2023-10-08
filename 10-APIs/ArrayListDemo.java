@@ -5,10 +5,10 @@ public class ArrayListDemo{
     public static void main(String[] args){
         System.out.println("\n");
 
-        /* Creating an instance of ArrayList we make refernce to Parent class and create an object of child class
+        /* Creating an instance of ArrayList we make refernce to Parent interface and create an object of child class
          * An ArrayList is dynamic in size
          */
-        List<String> names = new ArrayList<>();
+        List<String> names = new ArrayList<String>();
 
         names.add("Pratheek");
         names.add("Shri");
@@ -43,7 +43,7 @@ public class ArrayListDemo{
 
         // check if the list is empty
         if(ages.isEmpty() /* returns a bolean */ ){
-            System.out.println("Is the age list empty: ");
+            System.out.println("The age list is empty: ");
         }else{
             System.out.println("Age list is not empty");
 
