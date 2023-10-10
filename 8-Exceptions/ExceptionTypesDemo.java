@@ -30,7 +30,7 @@ class ExceptionTypesDemo{
             System.out.println("  All exceptions if occured were handeled ");
         }
         
-        
         System.out.println("END OF THE PROGRAM");
+        
     }
 }
