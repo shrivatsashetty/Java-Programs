@@ -1,3 +1,6 @@
+/* Java program to demonstrate Generics in Java */
+
+/* Lets create a generic class called Printer */
 class Printer<T> {
 
     T toPrint; // the type of T is variable
