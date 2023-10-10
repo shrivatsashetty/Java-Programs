@@ -1,3 +1,5 @@
+/* This java program demonstrates the creation of custom exception and throwing it using throw keyword */
+
 import java.util.Scanner;
 
 public class ThrowExceptionDemo {
@@ -14,7 +16,7 @@ public class ThrowExceptionDemo {
 
             if(word.length() < 4){
                 /* create a new Exception object and throw it with a message to print */
-                Exception myException = new Exception("Dont want to print small words", null);
+                Exception myException = new Exception("Dont want to print small words", null); // null is optional argument
                 throw myException;
                           
             }
