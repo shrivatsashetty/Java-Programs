@@ -1,3 +1,5 @@
+/* Java program to demonstrate handling of multiple exceptions */
+
 class ArrayBoundExceptionDemo{
     public static void main(String[] args){
         int[] marks = {88, 89,78};

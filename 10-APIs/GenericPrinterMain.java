@@ -3,7 +3,7 @@
 /* Lets create a generic class called Printer */
 class Printer<T> {
 
-    T toPrint; // the type of T is variable
+    T toPrint; // the type T of variable t s not fixed
 
     // constructor for the generic class
     public Printer(T toPrint){
