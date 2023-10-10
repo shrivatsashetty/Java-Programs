@@ -3,7 +3,7 @@ class MyThreadA extends Thread{
     // overriding the run() method of inbuilt Thread class
     public void run(){
         for(int i = 1; i<=50;i++){
-            System.out.println("Hi.. : " + i);
+            System.out.println("Hi.. from " + this.getName() + i);
             try{
                 super.sleep(5);
             }catch(Exception e){
@@ -18,7 +18,7 @@ class MyThreadB extends Thread{
     // overriding
     public void run(){
         for(int i = 1; i <= 50; i++){
-            System.out.println("Hello..  " + i);
+            System.out.println("Hello.. from " + this.getName() + i);
         }
     }
 }
