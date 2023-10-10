@@ -28,7 +28,7 @@ public class ThrowExceptionDemo {
             if(e.getCause() == null){
                 System.out.println(" Cause of exception is unknown");
             }else{
-                System.out.println("exception caused by: " + e.getCause());
+                System.out.println("exception caused by: " + e.getCause().toString());
             }
             
             System.out.println(" Plz enter a word greater than 4 characters \n");
