@@ -53,9 +53,8 @@ class Generics<T extends Number>{
         ArrayList<Integer> intSortList = new ArrayList<>();
         for(T item : genericList){
             if(item instanceof Integer){
-                intSortList.add((Integer)item);
+                intSortList.add((Integer)item); // csating to Integer before adding to the array list
             }
-            intSortList.add((Integer)item);
         } 
         Collections.sort(intSortList);
         System.out.println("Sorted integers" + intSortList);
