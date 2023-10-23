@@ -1,4 +1,4 @@
-
+/* A program to demonstrate Thread safe method */
 class Counter{
     public static int count = 0;
 
