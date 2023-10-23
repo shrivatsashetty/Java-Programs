@@ -24,7 +24,7 @@ public class StringMethods {
         System.out.println("string Fox occurs @ index " + scentence.indexOf("Fox")); // search for a sub string 
         System.out.println("The character B occurs at index: " + scentence.indexOf('B')); // search for a character
 
-        // get character @ a specified index
+        // get character at a specified index
         System.out.println("character @ index 3 is " + scentence.charAt(3));
         // StringIndexOutOfBoundsException demo
         try{
@@ -39,15 +39,25 @@ public class StringMethods {
         }
 
         // searching for a sequence of char using contains() method
+        System.out.println("\n");
         System.out.println("The scentence contains contains substring Dog: " + scentence.contains("Dog"));
         System.out.println();
 
         String capitalisedText = "THIS TEXT IS TYPED WITH CAPS LOCK ON";
         System.out.println("string \"caps\" occours in capitalised text " + capitalisedText.toLowerCase().contains("caps"));
+        System.out.println("\n");
+
+         // convert to an Array using toCharArray()
+         System.out.println("Printing from array of character : ");
+         char[] capitalisedTextArray = capitalisedText.toCharArray();
+         // printing the 
+         for(char character : capitalisedTextArray){
+            System.out.print(character);
+         }
 
         // Equality of string using equals() method
+        System.out.println("\n");
         System.out.println("HELLO & hello are the same: " + "HELLO".toLowerCase().equals("hello"));
-
 
         // taking a text string as user input  
         // Scanner scanner = new Scanner(System.in);
@@ -56,7 +66,6 @@ public class StringMethods {
         // System.out.print("Enter last name: ");
         // String lastName = scanner.nextLine();
         // System.out.println("Full name: " + firstName.concat(lastName));
-
 
         // scanner.close();
            
