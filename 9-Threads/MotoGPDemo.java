@@ -14,21 +14,33 @@ class Suzuki extends Thread{
         this.waitTime = waitTime;
     }
     
+    @Override // overriding run() method
     public void run(){
 
-        // -
-
+        /* iterating through each lap */
         for(int i = 0;i <= Rules.TOTAL_LAPS; i++){
             System.out.println(this.getName() + " completes " +  i + " laps ");
 
+            /* checking for winning condition */
+            // if((i ==  Rules.TOTAL_LAPS) && (Rules.winnerFound != true)){
+            //     Rules.winnerFound = true;
+            //     Rules.winner = this.getName();
+            // }
+
+            /*  sending the thread to sleep */
             try{Thread.sleep(1004);
             }catch(InterruptedException e){ 
                 System.out.println(this.getName() + " Skids... but gets back up");
             }
             System.out.println("Current bike throttling : " + Thread.currentThread().getName());
-
         }
-        System.out.println( this.getName() + " finishes race!!!!");
+
+        System.out.println( this.getName() + " finishes race!!!!!!!!!!!!!");
+        if((Rules.winnerFound != true)){ 
+                Rules.winnerFound = true;
+                Rules.winner = this.getName();
+            }
+        
     }
 }
 
@@ -40,23 +52,32 @@ class TVS extends Thread{
         this.waitTime = waitTime;
     }
 
+    @Override // overriding run() method
     public void run(){
+
         for(int i = 0;i <= Rules.TOTAL_LAPS; i++){
+            // iterating through each lap
             System.out.println(this.getName() + " completes " +  i + " laps ");
 
-            try{Thread.sleep(2020);
+            // checking for winning condition
+            // if((i ==  Rules.TOTAL_LAPS) && (Rules.winnerFound != true)){
+            //     Rules.winnerFound = true;
+            //     Rules.winner = this.getName();
+            // }
+
+            // sending the thread to sleep
+            try{Thread.sleep(1004);
             }catch(InterruptedException e){ 
                 System.out.println(this.getName() + " Skids... but gets back up");
             }
             System.out.println("Current bike throttling : " + Thread.currentThread().getName());
+        }
 
-            if((i ==  Rules.TOTAL_LAPS) && (Rules.winnerFound != true)){
+        System.out.println( this.getName() + " finishes race!!!!!!!!!!!!!");
+        if((Rules.winnerFound != true)){ 
                 Rules.winnerFound = true;
                 Rules.winner = this.getName();
             }
-        }
-        System.out.println( this.getName() + " finishes race!!!");
-
     }
 }
 
@@ -68,23 +89,32 @@ class Honda extends Thread{
         this.waitTime = waitTime;
     }
     
+    @Override // overriding run() method
     public void run(){
+
         for(int i = 0;i <= Rules.TOTAL_LAPS; i++){
+            // iterating through each lap
             System.out.println(this.getName() + " completes " +  i + " laps ");
 
-            try{Thread.sleep(1560);
+            // checking for winning condition
+            // if((i ==  Rules.TOTAL_LAPS) && (Rules.winnerFound != true)){
+            //     Rules.winnerFound = true;
+            //     Rules.winner = this.getName();
+            // }
+
+            // sending the thread to sleep
+            try{Thread.sleep(1004);
             }catch(InterruptedException e){ 
                 System.out.println(this.getName() + " Skids... but gets back up");
             }
             System.out.println("Current bike throttling : " + Thread.currentThread().getName());
+        }
 
-            if((i ==  Rules.TOTAL_LAPS) && (Rules.winnerFound != true)){
+        System.out.println( this.getName() + " finishes race!!!!!!!!!!!!!");
+        if((Rules.winnerFound != true)){ 
                 Rules.winnerFound = true;
                 Rules.winner = this.getName();
             }
-
-        }
-        System.out.println( this.getName() + "finishes race!!!");
     }
 }
 
@@ -93,7 +123,7 @@ class Honda extends Thread{
 
 public class MotoGPDemo {
     public static void main(String[] args){
-        Suzuki suszuki = new Suzuki(2000);
+        Suzuki suszuki = new Suzuki(1050);
         TVS tvs = new TVS(1010);
         Honda honda = new Honda(900);
 
