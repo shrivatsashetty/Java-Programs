@@ -65,7 +65,7 @@ class TVS extends Thread{
             //     Rules.winner = this.getName();
             // }
 
-            // sending the thread to sleep
+            /* sending the thread to sleep */
             try{Thread.sleep(1004);
             }catch(InterruptedException e){ 
                 System.out.println(this.getName() + " Skids... but gets back up");
@@ -102,7 +102,7 @@ class Honda extends Thread{
             //     Rules.winner = this.getName();
             // }
 
-            // sending the thread to sleep
+            /* sending the thread to sleep */
             try{Thread.sleep(1004);
             }catch(InterruptedException e){ 
                 System.out.println(this.getName() + " Skids... but gets back up");
@@ -123,9 +123,9 @@ class Honda extends Thread{
 
 public class MotoGPDemo {
     public static void main(String[] args){
-        Suzuki suszuki = new Suzuki(1050);
-        TVS tvs = new TVS(1010);
-        Honda honda = new Honda(900);
+        Suzuki suszuki = new Suzuki(1050l);
+        TVS tvs = new TVS(1010l);
+        Honda honda = new Honda(900l);
 
         suszuki.setName("Gixer");
         tvs.setName("Apache");
