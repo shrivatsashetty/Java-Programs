@@ -15,7 +15,7 @@ public class ThreadSleep {
 
                 System.out.println("Thread sleeping....");
                     try{
-                        Thread.sleep(1000);
+                        Thread.sleep(2500);
                     }catch(Exception e){/* catching exception but not handling */}
                     System.out.println("Thread wakes up");
                 
