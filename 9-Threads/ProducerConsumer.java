@@ -1,36 +1,30 @@
-public class ProducerConsumer {
-    
-    class Rescource{
 
-        public final int MAX_SIZE = 10;
-        public final int MIN_SIZE = 3;
-        
-        public int currentSize;
-        
-        public int produce() {
-            if(currentSize < MAX_SIZE){
-                this.currentSize++;
+class Rescource{
+    public static int bufferSize = 0;
+    public static int MAX_BUFFER_SIZE = 5;
+    public static int MIN_BUFFER_SIZE = 2;
+}
+
+class Producer extends Thread{
+    @Override
+    public void run(){
+        while(!(Rescource.bufferSize <= Rescource.MIN_BUFFER_SIZE)){
+
+            try{
+                this.wait();
+            }catch(InterruptedException e){
+
             }
-            return currentSize;
-            
-        }
-        
-        public int consume() {
-            if(currentSize > MIN_SIZE){
-                this.currentSize--;
+
+            for(int i = Rescource.MIN_BUFFER_SIZE; i <= Rescource.MAX_BUFFER_SIZE; i++ ){
+                Rescource.bufferSize++;
             }
-            return currentSize;
-        }
-        
-    }
-    
-    class Producer extends Rescource implements Runnable{
-        public void run(){
-            if(currentSize < MAX_SIZE){
-                produce();
-            }
+                
         }
     }
-    
+}
+
+
+public class ProducerConsumer {
 
 }
