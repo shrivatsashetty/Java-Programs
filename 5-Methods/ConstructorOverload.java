@@ -37,9 +37,6 @@ public class ConstructorOverload {
     public static void main(String[] args){
         Car car0 = new Car();
         Car car1 = new Car("Mercedes" );
-        Car car2 = new Car("Ferrari", 300 );
-        Car car3 = new Car("Lamborghini", 500, 3889l );
-
         car0.showCarSpecs();
         System.out.println("\n");
         car1.showCarSpecs();

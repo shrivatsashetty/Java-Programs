@@ -8,7 +8,10 @@ public class NumberList {
     public static void main(String[] args){
 
         /* instantiating an ArrayList at the time of creation itself */
-        List<Integer> myNums = new ArrayList<>(List.of(7, 11, 6, 1, 10, 13, 17 ));
+        List<Integer> myNums = new ArrayList<>();
+        myNums.add(7);
+        myNums.add(5);
+        myNums.add(3);
         // System.out.println(myNums);
         myNums.add(9); // its mutable
         System.out.println("myNums before sort:\n " + myNums);

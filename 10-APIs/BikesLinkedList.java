@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 
@@ -8,7 +9,10 @@ public class BikesLinkedList {
         System.out.println("\nOutput:\n");
 
         /* First we will create an immutable list conataining names of some bike companies  using List.of() method */
-        List<String> bikeNames = List.of("Bajaj", "TVS", "Honda"); 
+        List<String> bikeNames = new ArrayList<>(); 
+        bikeNames.add("Honda");
+        bikeNames.add("Suzuki");
+        bikeNames.add("Hero");
 
         /* Now pass the created list as input (argument) to the constructor of LinkedList class */
         LinkedList<String> bikes = new LinkedList<>(bikeNames);     
@@ -40,9 +44,6 @@ public class BikesLinkedList {
         System.out.println("\nbike replaced: " + bikes.set((int)bikes.size()/2, "Harley"));
         System.out.println(bikes);
  
-
-
-        
 
     }
 
