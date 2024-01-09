@@ -49,7 +49,7 @@ class Circle {
     }
 }
 
-public class shape {
+public class Shape {
     public static void main(String[] args) {
         Square square = new Square(5.0);
         Triangle triangle = new Triangle(2.0, 3.0, 4.0);
