@@ -1,4 +1,4 @@
-
+/* In this program we create a simple class and an anonymous inner class */
 class Anonymous{
     // simple method
     public void show(){
