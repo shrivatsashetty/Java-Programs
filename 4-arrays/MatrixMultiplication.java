@@ -1,13 +1,11 @@
+/* Java program to demonstrate multiplication of two nxn matrices */
+
 public class MatrixMultiplication {
     public static void main(String args[]){
 
         // lets consider two 3x3 matrices
         int[][] matrixA = { {1, 4, 5}, {2, 6, 7}, {0, 3, 2} };
         int[][] matrixB = { {4, 3, 2}, {1, 8, 0}, {2, 6, 3} };
-
-        // for(int i=0; i < matrixA.length; i++){
-
-        // }
         int[][] productMatrix = new int[matrixA.length][matrixB.length];
 
         for(int x = 0; x < productMatrix.length; x++ ){
