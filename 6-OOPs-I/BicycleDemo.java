@@ -1,22 +1,29 @@
+/* A demo java program to bring a gear bicycle to programming */
+
 class Bicycle{
     int topGear = 5;
     float topSpeed = 55.67f;
     int currentGear = 0;
     float currentSpeed = 23.45f;
 
+    // a method to change the gear of the cycle
     void changeGear(int newGear){
         System.out.println("gear shifting to: " + newGear);
-        currentGear = newGear;
-    }
-    void slowDown(float cutSpeedBy){
-        System.out.println("Slowing down by: " + cutSpeedBy);
-        currentSpeed -= cutSpeedBy;
+        this.currentGear = newGear;
     }
 
+    // a method to slow down the cycle
+    void slowDown(float reduceSpeedBy){
+        System.out.println("Slowing down by: " + reduceSpeedBy);
+        this.currentSpeed -= reduceSpeedBy;
+    }
+
+    // method to stop the bicycle
     void stop(){
-        currentSpeed = 0;
+        this.currentSpeed = 0;
     } 
 
+    // method to print the current states of the bicycle
     void printStates(){
         System.out.println("Current Gear: " + currentGear );
         System.out.println("Current Speed: " + currentSpeed );
