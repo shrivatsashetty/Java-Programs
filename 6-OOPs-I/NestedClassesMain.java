@@ -6,7 +6,7 @@ class OuterClass{
     public void outerClassMethod(){
         System.out.println("Printing from outer class");
     }
-
+    // An inner class nested inside the outer class
     class InnerClass{
         // an attribute of the inner class
         int b = 4;
