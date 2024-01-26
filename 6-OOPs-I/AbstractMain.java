@@ -2,7 +2,10 @@
 abstract class People{
     String firstName = "Jhon";
     int age = 20;
-    abstract void speak(); // abstract method cannot have a body
+
+    // abstract method is just a declaration of the method with no implementation
+    abstract void speak(); 
+
     // an abstract class can also have non-abstract methods
     void nonAbstractMethod(){
         System.out.println("not abst");

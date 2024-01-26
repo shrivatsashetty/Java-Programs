@@ -1,13 +1,21 @@
-/* A program to demonstrate abstract class and abstract methods */
+/* A program to demonstrate abstract class and abstract methods
+ * an abstract class can contain both abstract and non abstract methods as well
+ */
 
+
+ // create an abstract class
 abstract class Animal{
     
     public abstract void walk();
+
+    public void run(){
+        System.out.println("Running at godspeed...");
+    }
 }
 
 
 class Human extends Animal{
-    
+    // implementation for the inherited abstract methods must be given
     @Override
     public void walk(){
         System.out.println("Human walks on two legs");

@@ -10,8 +10,8 @@ class Person{
         this.name = name;
     }
 
-    private void sayName(){
-        System.out.println("Hi my name is " + this.name + " and I'm " + this.age + " years old");
+    private void selfIntroduce(){
+        System.out.println("Hi, my name is " + this.name + " and I'm " + this.age + " years old");
     }
 
 
@@ -21,8 +21,8 @@ class Person{
         Person person2 = new Person("Manoj", 22); 
         
         // calling the methods via the objects
-        person1.sayName();
-        person2.sayName();
+        person1.selfIntroduce();
+        person2.selfIntroduce();
 
     }
     
