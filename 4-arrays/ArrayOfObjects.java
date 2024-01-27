@@ -29,6 +29,10 @@ public class ArrayOfObjects {
         StudentsList[1] = student2;
         StudentsList[2] = student3;
 
-        StudentsList[1].showStudentDetails();
+        // using enhanced for loop to print name of each student
+        System.out.println("We have the following students in our array:");
+        for(SchoolKid student : StudentsList){
+            System.out.println(student.name);
+        }
     }
 }

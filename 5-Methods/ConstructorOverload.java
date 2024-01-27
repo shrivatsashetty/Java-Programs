@@ -5,19 +5,23 @@ class Car{
     int topSpeed = 200;
     long regdNo = 1234567l;
 
+    // default construvtor with no arguments
     public Car(){
         
     } 
 
+    // constructor with a single argument
     public Car(String model){
         this.model = model;
     } 
 
+    // constructor with two arguments
     public Car(String model, int topSpeed){
         this.model = model;
         this.topSpeed = topSpeed;
     }
 
+    // constructor with three arguments
     public Car(String model, int topSpeed, long regdNo){
             this.model = model;
             this.topSpeed = topSpeed;
