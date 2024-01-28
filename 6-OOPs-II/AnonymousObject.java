@@ -10,7 +10,13 @@ class AnonymousSecond {
         
         /* constructor */ 
         AnonymousSecond() {
-            System.out.println("\nObject of AnonymousObject class created");
+            System.out.println("\nObject of AnonymousSecond class created");
+        }
+
+        /* constructur overloading */
+        AnonymousSecond(String name){
+            this.name = name;
+            System.out.println("\nAnonymous class called with a name");
         }
 
         // user defined method
@@ -27,6 +33,9 @@ public class AnonymousObject {
         new AnonymousSecond(); // only the constructor will be called
 
         new AnonymousSecond().sayName(); // both constructor and user defined method is called
+
+        new AnonymousSecond("Mr Anonymous Class").sayName(); // overloaded constructor with user def method is called
+        
     }
 }
 
