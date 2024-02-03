@@ -32,6 +32,7 @@ class Developer{
         this.developerName = developerName;
     }
 
+    // the below method can take any subclass of the Computer as argument, providing flexibility 
     public void code(Computer computer){
         computer.develop(new Developer(this.developerName));
     }
@@ -39,6 +40,7 @@ class Developer{
 
 public class LooseCoupling {
     public static void main(String[] args){
+        // below we create two objects with the reference of parent class 
         Computer laptop = new Laptop();
         Computer desktop  = new Desktop();
 
@@ -48,5 +50,21 @@ public class LooseCoupling {
            and is not dependent on laptop or desktop but a computer instead */ 
         developer.code(laptop);
         developer.code(desktop);
+
+        /* let's see how it allows reuse of same object name */
+        Computer computer; // common reference
+
+        computer = new Laptop();
+        computer.develop(developer); // Laptops develop method is called
+
+        computer = new Desktop();
+        computer.develop(developer); // Desktops develop method is called
+
+        /* Instead writing it as below would raise an error */
+        // Laptop lap = new Laptop();
+        // lap.develop(developer);
+
+        // lap = new Desktop();
+
     }
 }
