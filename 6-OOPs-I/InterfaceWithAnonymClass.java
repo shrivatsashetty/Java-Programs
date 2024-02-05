@@ -6,7 +6,7 @@ interface InterfaceA{
     void display();
 }
 
-public class InterWithAnonInnClass {
+public class InterfaceWithAnonymClass {
 
     public static void main(String[] args) {
 
