@@ -26,10 +26,11 @@ public class InterWithAnonInnClass {
             public void display(){
                 System.out.println("inside display method");
             }
-            
+
         };
 
-        objA.show();
+        // calling the methods
+        objA.show(); 
         objA.display();
 
     }

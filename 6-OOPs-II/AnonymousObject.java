@@ -1,5 +1,5 @@
 /* An anonymous object are not assigned a name
-   and can only be used once  */
+   and can only be used once i.e anonymous objects are not reusable */
 
 /* since we already have a class called Anonymous in the same package(folder) 
     we'll use other name for this class*/
