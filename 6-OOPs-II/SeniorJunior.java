@@ -1,6 +1,6 @@
 /* a java program to demonstrate the super keyword and Object class */
 
-/* lets create a superclass called Senior, every java class extends Object class by default*/
+/* super class Senior, every java class extends Object class by default*/
 class Senior extends Object{
 
     public int age; 

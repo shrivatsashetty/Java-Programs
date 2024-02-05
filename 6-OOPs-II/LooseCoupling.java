@@ -1,4 +1,4 @@
-/* a program to demonstrate loose coupling */
+/* a program to demonstrate loose coupling and dynamic method dispatch */
 
 
 interface Computer{

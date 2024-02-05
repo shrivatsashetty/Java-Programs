@@ -1,15 +1,15 @@
 /* This is a java program to to demonstrate multiple implementation of interfaces by a class */
 
 interface Inter1{
-    /* An interface can contain only constants(final) as attributes */
-    final int value1 = 5;
+    /* An interface can contain class variables that are static and final */
+    static final int inter1InstanceVar = 5;
 
     void inter1Method1();
 }
 
 interface Inter2{
     
-    final int value2 = 10;
+    static final int inter2InstanceVar = 10;
      /* By default interface mthods are public */
     void inter2Method2();
 }
@@ -37,10 +37,10 @@ class MultiImplement{
        InterImplementer obj = new InterImplementer();
 
        obj.inter1Method1();
-       System.out.println("Interface 1 has a data member: " + InterImplementer.value1); // 
+       System.out.println("Interface 1 has a data member: " + InterImplementer.inter1InstanceVar); // 
        
        obj.inter2Method2();
-       System.out.println("Interface 12 has a data member: " + InterImplementer.value2);
+       System.out.println("Interface 2 has a data member: " + InterImplementer.inter2InstanceVar);
 
     }
 }
