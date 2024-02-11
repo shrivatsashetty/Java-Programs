@@ -1,3 +1,4 @@
+/* this program is an examle of the eager initialisation singleton pattern */
 
 class Singleton{
 
