@@ -1,7 +1,7 @@
 
 /* a java program to extract units digit from each numbers in a given array of integers */
 
-public class UnitsDigitExtract {
+public class UnitsDigitExtraction {
 
     public static void main(String[] args) {
         int[] givenArray = {43, 31, 72, 29};

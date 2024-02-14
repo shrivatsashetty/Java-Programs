@@ -16,6 +16,6 @@ class  ConcreteCone implements Cone{
     }
 }
 
-public class SolidShapesInterfaceDemo {
+public class SolidShapeInterfaceDemo {
     
 }
