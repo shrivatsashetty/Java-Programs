@@ -13,6 +13,17 @@ class GenericClass <T1, T2> {
       System.out.println(instanceVarType1.getClass().getName());
       System.out.println(instanceVarType2.getClass().getName());
     }
+
+    // to create a generic method just put an angular bracket before return type
+    public <T> void printType(T objOfTypeT){
+      System.out.println(objOfTypeT.getClass().getName());
+    }
+
+    // a generic method which can return something
+    public <T> T returnSomeType(T t){
+      return t;
+    }
+
   
   }
   
@@ -22,6 +33,12 @@ class GenericClass <T1, T2> {
       GenericClass<Double, Boolean> genObj2 = new GenericClass<>(22.5, false);
       genObj1.showTypes();
       genObj2.showTypes();
+
+      System.out.println();
+
+      genObj1.printType(Float.parseFloat("1.222")); // java.lang.Float
+      genObj2.printType(Double.valueOf(3.14));  // java.lang.Float
+      genObj2.printType(Integer.valueOf(5)); // java.lang.Integer
 
     }
    
