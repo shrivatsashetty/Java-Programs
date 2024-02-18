@@ -15,7 +15,7 @@ class UpperBoundWildCard<T extends Number> {
     }
 }
 
-public class GenericsUpperBoundWildcardsDemo {
+public class UpperBoundGenericDemo {
     public static <T extends Number> double sum(List<T> numbers) {
         double total = 0.0;
         for (T number : numbers) {
